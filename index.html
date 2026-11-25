@@ -6,7 +6,7 @@
 <title>Echoes Across the Thaw</title>
 <meta name="description" content="Echoes Across the Thaw: listening to the city through a melting interface. Proposal for Sound Scene 2027: Sounds of the City.">
 <link rel="stylesheet" href="_shared/style.css?v=20261124b">
-<link rel="stylesheet" href="thaw.css?v=20261124b">
+<link rel="stylesheet" href="thaw.css?v=20261125">
 </head>
 <body>
 <div id="site-header"></div>
@@ -236,14 +236,14 @@
 </div></footer>
 
 <script src="_shared/site.js?v=20261124b"></script>
-<script src="_shared/ripples.js?v=20261124b"></script>
+<script src="_shared/ripples.js?v=20261125"></script>
 <script>
 (function () {
   var ring = [];
   for (var i = 0; i < 6; i++) { var a = i / 6 * Math.PI * 2; ring.push({ x: 0.5 + Math.cos(a) * 0.09, y: 0.5 + Math.sin(a) * 0.16, f: 1 + i * 0.045, amp: 0.8 }); }
-  Ripples.attach(document.getElementById("water"), { sources: ring.concat([{ x: 0.5, y: 0.5, f: 0.7, amp: 0.9 }]), palette: "gold", interactive: true });
+  Ripples.attach(document.getElementById("water"), { sources: ring.concat([{ x: 0.5, y: 0.5, f: 0.7, amp: 0.9 }]), palette: "ice", interactive: true });
   var spk = [{ x: 0.3, y: 0.42, f: 1, amp: 1, g: 1 }, { x: 0.27, y: 0.68, f: 1.08, amp: 0.9, g: 1 }, { x: 0.72, y: 0.4, f: 1.3, amp: 1, g: 2 }, { x: 0.75, y: 0.66, f: 1.4, amp: 0.9, g: 2 }];
-  var lab = Ripples.attach(document.getElementById("lab"), { sources: spk, palette: "gold", interactive: true });
+  var lab = Ripples.attach(document.getElementById("lab"), { sources: spk, palette: "ice", interactive: true });
   [1, 2].forEach(function (n) {
     var f = document.getElementById("freq" + n), a = document.getElementById("amp" + n);
     lab.setFreq(+f.value, n);

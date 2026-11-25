@@ -1,5 +1,5 @@
 /* Interfering water ripples on a canvas (used as a hero background / interactive surface).
-   Ripples.attach(canvas, { sources: [{x,y,f}], palette: "graphite" | "paper" | "gold", interactive: true })
+   Ripples.attach(canvas, { sources: [{x,y,f}], palette: "graphite" | "paper" | "gold" | "ice", interactive: true })
    Each source emits circular waves; where they overlap the surface interferes. Click or tap adds a short-lived source. */
 (function () {
   function attach(canvas, opts) {
@@ -32,6 +32,11 @@
         // light museum water: warm gold in the troughs, pale white on the crests
         var q = Math.min(1, v * 1.15);
         return [214 + q * 41, 160 + q * 92, 72 + q * 160];
+      }
+      if (palette === "ice") {
+        // water and ice as in the proposal pictures: cool pale blue in the troughs, white on the crests, a faint yellow tint in between
+        var u = Math.min(1, v * 1.15), tint = 9 * Math.sin(u * Math.PI);
+        return [204 + u * 48 + tint, 217 + u * 35 + tint, 228 + u * 18];
       }
       var a = 16 + v * 232;
       return [a * 1.0 + light * 14, a * 0.96 + light * 8, a * 0.9];

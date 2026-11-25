@@ -1,26 +1,26 @@
 /* Echoes Across the Thaw: graphite and light, water first */
-.thaw-hero { position: relative; background: #f6ecd6; color: #111; min-height: min(86vh, 760px); display: flex; align-items: flex-end; overflow: hidden; }
+.thaw-hero { position: relative; background: #eaf0f3; color: #111; min-height: min(86vh, 760px); display: flex; align-items: flex-end; overflow: hidden; }
 .thaw-hero canvas#water { position: absolute; inset: 0; width: 100%; height: 100%; cursor: crosshair; }
-.thaw-hero .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,250,238,.88) 0%, rgba(255,250,238,.55) 50%, rgba(255,250,238,0) 100%); pointer-events: none; }
+.thaw-hero .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(248,251,252,.88) 0%, rgba(248,251,252,.55) 50%, rgba(248,251,252,0) 100%); pointer-events: none; }
 .thaw-hero .wrap { position: relative; padding-top: 80px; padding-bottom: clamp(36px, 6vw, 72px); pointer-events: none; }
 .thaw-hero .label { color: var(--purple); }
 .thaw-hero .label::after { background: var(--purple); }
 .thaw-hero h1 { font-size: clamp(40px, 7.4vw, 92px); margin-bottom: .1em; }
 .thaw-hero .sub { font-size: clamp(18px, 2.4vw, 26px); max-width: 28em; color: #111; }
-.thaw-hero .hint { position: absolute; right: var(--gutter); top: 16px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #6b5a2a; pointer-events: none; }
+.thaw-hero .hint { position: absolute; right: var(--gutter); top: 16px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #5a6670; pointer-events: none; }
 .prose p { max-width: 38em; }
 .prose p.lead { max-width: 30em; }
 .bridge { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--purple); }
 
-.lab { background: #fbf6ea; color: #111; }
-.lab .panel { position: relative; background: #f6ecd6; }
+.lab { background: #f4f7f8; color: #111; }
+.lab .panel { position: relative; background: #eaf0f3; }
 .lab canvas { width: 100%; height: 340px; }
 .lab .ctrl { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 36px; margin-top: 18px; }
 .lab .spk { border-top: 2px solid #c79a3b; padding-top: 10px; }
 .lab .spk h3 { font-size: 18px; margin: 0 0 10px; }
 .lab .spkdesc { max-width: 40em; margin: 14px 0 0; }
 .lab label { display: block; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #5b3fd6; margin-bottom: 6px; }
-.lab input[type=range] { width: 100%; accent-color: #b8892b; }
+.lab input[type=range] { width: 100%; accent-color: #6f93a6; }
 .lab .read { font-variant-numeric: tabular-nums; color: #111; font-weight: 700; margin-left: 8px; letter-spacing: 0; text-transform: none; }
 @media (max-width: 640px) { .lab .ctrl { grid-template-columns: 1fr; } .lab canvas { height: 240px; } }
 
